@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nykaa-signin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<style>
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+   .header{
+    position: relative;
+    top:30px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    background-image: url(2.jfif);
+    background-repeat: no-repeat;
+    background-size: 500px 150px;
+   }
+   .header img{
+    margin-top: 10px;
+   }
+   .header h2{
+    font-size: 15px; 
+    color: rgb(30, 70, 104);
+   }
+   .profile{
+    margin-top: 40px;
+    
+   }
+  .profile input{
+    height: 30px;
+    width: 70%;
+    border-radius: 10px;
+    border: 1px solid wheat;
+  }
+  .profile input:hover{
+  background-color: #fc2779;
+  border: 1px solid white;
+  }
+  .profile button{
+    height: 30px;
+    width: 70px;
+    background-color: rgb(36, 57, 75);
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  .google button{
+    height: 40px;
+    width: 250px;
+    background-color: rgb(36, 57, 75);
+    color: white;
+    border: none;
+    border-radius: 10px;
+  }
+@media only screen and (max-width:600px){
+  *{
+        padding: 0%;
+        margin: 0%;
+    }
+   .header{
+    position: relative;
+    top:30px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    background-image: url(558.avif);
+    
+    background-repeat: no-repeat;
+    background-size: 300px 90px;
+   }
+   .header h1{
+    font-size: 20px;
+    color: rgb(38, 14, 41);
+   }
+   .header h2{
+    font-size: 12px;
+    color: rgb(9, 29, 56);
+   }
+   .header img{
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+   }
+   .profile{
+    margin-top: 20px;
+    
+   }
+   .profile label{
+    color: rgb(13, 13, 94);
+   }
+  .profile input{
+    height: 25px;
+    width: 60%;
+    border-radius: 10px;
+    border: 1px solid wheat;
+  }
+  .profile input:hover{
+  background-color: #95b7bd;
+  border: 1px solid white;
+  }
+  .profile button{
+    height: 25px;
+    width: 60px;
+    background-color: rgb(36, 57, 75);
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  .google button{
+    height: 30px;
+    width: 220px;
+    background-color: rgb(36, 57, 75);
+    color: white;
+    border: none;
+    border-radius: 20px;
+  }
+}
+</style>
+<body>
+    <center>
+    <div class="header">
+        <img src="n-logo.jfif" height="50px" width="50px" >
+        <h1>Sign in</h1>
+        <h2 >Enjoy With Nykaa Products! Welcome to NYKAA</h2>
+        <div class="profile" name="myprofile">
+            <label>Username:</label>
+            <input type="text" placeholder="Username" id="username"><br><br>
+            <label>Password:</label>
+            <input type="text" placeholder="Password" id="password"><br><br>
+            <label>Mail-Id:</label>
+            <input type="text" placeholder="e-mail" id="e-mail"><br><br>
+            <label>Phone No:</label>
+            <input type="text" placeholder="phone No" id="phone"><br><br>
+            <button class="sign" onclick="signfun()" style="text-decoration: none;color: white;">Sign-In</button>
+            <p style="margin-top: 10px;">or</p>
+            <div class="google">
+            <button style="margin-top: 10px;" >Sign with Google</a></button></div>
+        </div>
+    </div>
+</center>
+<script>
+   function signfun(){
+      var name=document.getElementById("username").value;
+      var password=document.getElementById("password").value;
+     
+      if(name==null || name==""){
+        alert("Username must be entered");
+        return false;
+      }
+      else if(password==null || password==""){
+        alert("Password must be entered");
+        return false;
+      }
+      
+      else{
+        location.href='home.html';
+      }
+   }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
